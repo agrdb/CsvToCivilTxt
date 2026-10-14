@@ -10,6 +10,8 @@ App de escritorio para Windows (C# · WinForms · .NET Framework 4.8). Es un `.e
 
 ---
 
+![Conversión de un CSV de 3 281 puntos a PENZD](docs/img/conversion.png)
+
 ## El problema
 
 Los levantamientos llegan en CSV de programas muy distintos (Excel, estación total, GNSS, QGIS, software de colectora...). Cada uno usa su propio orden de columnas, separador (`;` o `,`), coma o punto decimal, y a veces coordenadas geográficas en vez de planas. Civil 3D solo importa los formatos fijos de **Point File Formats** (PENZD, PNEZD, ENZ...), así que cada archivo había que acomodarlo a mano en Excel.
@@ -38,6 +40,13 @@ La app tiene **dos métodos**, cada uno en su pestaña:
 - Formatos PENZD, PNEZD, PENZ, PNEZ, ENZ y NEZ, *comma* o *space delimited* — los mismos nombres que en Civil 3D.
 - Vista previa de cada línea del TXT antes de exportar y registro de filas omitidas con el motivo.
 - Numeración automática si el CSV no trae número de punto; descripciones con espacios protegidas (`POZO 1` → `POZO_1`) en formato *space delimited*.
+
+<details>
+<summary>Ventana al abrir la app</summary>
+
+![Ventana principal](docs/img/ventana.png)
+
+</details>
 
 ## Descargar
 
