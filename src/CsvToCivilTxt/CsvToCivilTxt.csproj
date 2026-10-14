@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- .NET Framework 4.8: viene instalado en Windows 10/11, el .exe corre sin instalar nada -->
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>CsvToCivilTxt</RootNamespace>
+    <AssemblyName>CsvToCivilTxt</AssemblyName>
+    <Company>AGRDB</Company>
+    <Product>CSV a TXT para Civil 3D</Product>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+</Project>
