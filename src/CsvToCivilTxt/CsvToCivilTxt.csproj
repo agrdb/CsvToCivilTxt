@@ -9,8 +9,19 @@
     <RootNamespace>CsvToCivilTxt</RootNamespace>
     <AssemblyName>CsvToCivilTxt</AssemblyName>
     <Company>AGRDB</Company>
+    <Authors>AGRDB</Authors>
     <Product>CSV a TXT para Civil 3D</Product>
-    <Version>1.0.0</Version>
+    <Description>Convierte CSV de puntos a TXT en formatos de Civil 3D (PENZD, PNEZD...).</Description>
+    <Copyright>© 2026 AGRDB - AGR Digital Building</Copyright>
+    <Version>1.1.0</Version>
+    <!-- Icono del .exe (Explorador, barra de tareas) y manifiesto con soporte de escalado DPI -->
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- El mismo icono incrustado para la ventana y el encabezado (AgrdbTheme.AppIcon) -->
+    <EmbeddedResource Include="Assets\app.ico" LogicalName="CsvToCivilTxt.Assets.app.ico" />
+  </ItemGroup>
 
 </Project>
