@@ -78,11 +78,14 @@ Cada push se compila automáticamente en GitHub Actions; al crear un tag `v*` se
 ```
 src/CsvToCivilTxt/
 ├── Program.cs          Punto de entrada
-├── MainForm.cs         Ventana principal y pestaña 1 (coordenadas planas)
-├── GeoPanel.cs         Pestaña 2 (geográficas → planas)
+├── MainForm.cs         Ventana: encabezado con icono, navegación entre métodos y pie con versión
+├── PlanasPanel.cs      Método 1 (coordenadas planas)
+├── GeoPanel.cs         Método 2 (geográficas → planas)
+├── AgrdbTheme.cs       Sistema de diseño AGRDB: colores, tipografía, tarjetas, botones, barra de acción
 ├── CsvPointReader.cs   Lectura de CSV, detección de separador/columnas, formateo y escritura del TXT
-└── Projection.cs       Sistemas MAGNA-SIRGAS/UTM y Transverse Mercator (Krüger)
-ejemplos/               CSV de prueba para cada pestaña
+├── Projection.cs       Sistemas MAGNA-SIRGAS/UTM y Transverse Mercator (Krüger)
+└── Assets/             Icono de la app (app.svg, app_small.svg para 16–24 px, app.ico multi-tamaño)
+ejemplos/               CSV de prueba para cada método
 ```
 
 ## Autor
